@@ -38,12 +38,12 @@ This MCP server makes Togolese law **searchable, cross-referenceable, and AI-rea
 
 > Connect directly to the hosted version -- zero dependencies, nothing to install.
 
-**Endpoint:** `https://togolese-law-mcp.vercel.app/mcp`
+**Endpoint:** `https://mcp.ansvar.eu/law-tg/mcp`
 
 | Client | How to Connect |
 |--------|---------------|
 | **Claude.ai** | Settings > Connectors > Add Integration > paste URL |
-| **Claude Code** | `claude mcp add togolese-law --transport http https://togolese-law-mcp.vercel.app/mcp` |
+| **Claude Code** | `claude mcp add togolese-law --transport http https://mcp.ansvar.eu/law-tg/mcp` |
 | **Claude Desktop** | Add to config (see below) |
 | **GitHub Copilot** | Add to VS Code settings (see below) |
 
@@ -54,7 +54,7 @@ This MCP server makes Togolese law **searchable, cross-referenceable, and AI-rea
   "mcpServers": {
     "togolese-law": {
       "type": "url",
-      "url": "https://togolese-law-mcp.vercel.app/mcp"
+      "url": "https://mcp.ansvar.eu/law-tg/mcp"
     }
   }
 }
@@ -67,7 +67,7 @@ This MCP server makes Togolese law **searchable, cross-referenceable, and AI-rea
   "github.copilot.chat.mcp.servers": {
     "togolese-law": {
       "type": "http",
-      "url": "https://togolese-law-mcp.vercel.app/mcp"
+      "url": "https://mcp.ansvar.eu/law-tg/mcp"
     }
   }
 }
